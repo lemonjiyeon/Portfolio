@@ -8,6 +8,7 @@
 	<head>
 		<title>JIYEON CHAE - PORTFOLIO</title>
 		<meta charset="utf-8" />
+		<link rel="icon" href="images/icon2.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css?after" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -25,7 +26,9 @@
 	</head>
 	<body class="is-preload">
 
-		<div id="bgwrapper">
+		<!-- <div class="loader">
+		</div> -->
+		<div class="container" id="bgwrapper">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -57,7 +60,6 @@
 							<li><a href="#intro" class="active">Introduction</a></li>
 							<li><a href="#first">Skills</a></li>
 							<li><a href="#second">Projects</a></li>
-							<li><a href="#cta">Get Started</a></li>
 						</ul>
 					</nav>
 
@@ -153,12 +155,12 @@
 									<li>
 										<span class="icon solid major style1 fa-desktop"></span>
 										<h3>Frontend</h3>
-										<p>Html5, css, dart, Javascript, react, JQuery 를 사용한 경험이 있으며, bootstrap 및 오픈소스를 활용할 수 있습니다.</p>
+										<p>Html5, css, dart, Javascript, react, JQuery 를 사용한 경험이 있으며, bootstrap 및 open source를 활용할 수 있습니다.</p>
 									</li>
 									<li>
 										<span class="icon solid major style3 fa-database"></span>
 										<h3>Backend</h3>
-										<p>java, kotlin, python, mysql, oracle, firebase, mongodb 를 사용한 경험이 있으며, DB를 연결하여 조인 쿼리 및 CRUD를 작성 가능합니다.</p>
+										<p>java, kotlin, python, mysql, oracle, firebase, mongodb 를 사용한 경험이 있으며, DB를 연결하여 Join Query 및 CRUD를 작성 가능합니다.</p>
 									</li>
 									<li>
 										<span class="icon solid major style5 fa-users"></span>
@@ -192,7 +194,7 @@
 											</div>
 												<h3>Tour Rainbow</h3>
 												프로젝트를 기획하고 UI디자인과 게시판 기능 구현을 진행하였습니다.
-												스프링 부트를 이용한 웹 사이트이며, 기본적인
+												Spring Boot를 이용한 웹 사이트이며, 기본적인
 												MVC 패턴을 바탕으로 로그인, 회원가입, 게시판, 게시글 관리 기능을 구현하였습니다.
 												
 												
@@ -227,9 +229,9 @@
 													</div>
 												</div>
 											</div>
-											<h3>우동도(우리동네도서관)</h3>
-											프로젝트를 기획하고 파이어베이스와 연동하여 도서 등록, 찜한 도서목록,
-											메인화면 및 내 정보수정 등 세부 기능을 구현하였습니다.
+											<h3>우리동네도서관(우동도)</h3>
+											프로젝트를 기획하고 Firebase와 연동하여 도서 등록, 찜한 도서목록,
+											메인화면 및 내정보 수정 등 세부 기능을 구현하였습니다.
 											
 											<ul class="skill-wrap">
 												<li class="skill">kotlin</li>
@@ -253,9 +255,9 @@
 													</div>
 												</div>
 											</div>
-											<h3>영화앱</h3>
-											React 클론코딩으로 기본적인 Dom사용으로 렌더링을 하였고,
-											깃을 통해 배포하였습니다.
+											<h3>Movie App</h3>
+											React 클론코딩으로 기본적인 Dom을 활용하여 렌더링을 하였고,
+											git을 통해 배포하였습니다.
 					
 											
 											<ul class="skill-wrap">
@@ -330,5 +332,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/typing.js"></script>
+			<!-- <script src="assets/js/loding-page.js"></script> -->
 	</body>
 </html>
