@@ -26,8 +26,8 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- <div class="loader">
-		</div> -->
+		<div class="loader">
+		</div>
 		<div class="container" id="bgwrapper">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -95,7 +95,7 @@
 											</div>
 											<div class="info">
 												<div class="info_title">생년월일</div>
-												<div>96.04.20</div>
+												<div>1996.04.20</div>
 											</div> 
 										</div>
 									</div>
@@ -155,12 +155,12 @@
 									<li>
 										<span class="icon solid major style1 fa-desktop"></span>
 										<h3>Frontend</h3>
-										<p>Html5, css, dart, Javascript, react, JQuery 를 사용한 경험이 있으며, bootstrap 및 open source를 활용할 수 있습니다.</p>
+										<p>Html5, CSS, Dart, Javascript, React, JQuery 를 사용한 경험이 있으며, Bootstrap 및 Open Source를 활용할 수 있습니다.</p>
 									</li>
 									<li>
 										<span class="icon solid major style3 fa-database"></span>
 										<h3>Backend</h3>
-										<p>java, kotlin, python, mysql, oracle, firebase, mongodb 를 사용한 경험이 있으며, DB를 연결하여 Join Query 및 CRUD를 작성 가능합니다.</p>
+										<p>Java, Kotlin, Python, Mysql, Oracle, Firebase, MongoDB 를 사용한 경험이 있으며, DB를 연결하여 Join Query 및 CRUD를 작성 가능합니다.</p>
 									</li>
 									<li>
 										<span class="icon solid major style5 fa-users"></span>
@@ -199,13 +199,13 @@
 												
 												
 												<ul class="skill-wrap">
-													<li class="skill">java</li>
-													<li class="skill">html</li>
-													<li class="skill">css</li>
-													<li class="skill">javascript</li>
-													<li class="skill">jquery</li>
-													<li class="skill">mysql</li>
-													<li class="skill">github</li>
+													<li class="skill">Java</li>
+													<li class="skill">HTML</li>
+													<li class="skill">CSS</li>
+													<li class="skill">Javascript</li>
+													<li class="skill">JQuery</li>
+													<li class="skill">Mysql</li>
+													<li class="skill">Github</li>
 												</ul>
 												<ul class="icons">
 													<li><a href="2팀_프로젝트기획서_최종.pptx" download="TOUR RAINBOW" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
@@ -234,9 +234,9 @@
 											메인화면 및 내정보 수정 등 세부 기능을 구현하였습니다.
 											
 											<ul class="skill-wrap">
-												<li class="skill">kotlin</li>
-												<li class="skill">firebase</li>
-												<li class="skill">github</li>
+												<li class="skill">Kotlin</li>
+												<li class="skill">Firebase</li>
+												<li class="skill">Github</li>
 											</ul>
 
 											<ul class="icons">
@@ -257,13 +257,13 @@
 											</div>
 											<h3>Movie App</h3>
 											React 클론코딩으로 기본적인 Dom을 활용하여 렌더링을 하였고,
-											git을 통해 배포하였습니다.
+											Git을 통해 배포하였습니다.
 					
 											
 											<ul class="skill-wrap">
-												<li class="skill">react</li>
-												<li class="skill">html</li>
-												<li class="skill">github</li>
+												<li class="skill">React</li>
+												<li class="skill">HTML</li>
+												<li class="skill">Github</li>
 											</ul>
 											<ul class="icons">
 												<li><a href="https://lemonjiyeon.github.io/movie_app_2020" class="icon solid alt fa-link"><span class="label">Link</span></a></li>
@@ -290,13 +290,13 @@
 											<h3>다금바리를 찾아서</h3>
 											이미지 딥러닝 모델을 통해 다금바리를 판별하는 어플로,
 											프로젝트 기획 초안을 작성하고, 
-											데이터 수집 및 정제와 안드로이드 UI 및 기능을 구현하였습니다.
+											데이터 수집 · 정제와 안드로이드 UI 및 기능을 구현하였습니다.
 					
 											
 											<ul class="skill-wrap">
-												<li class="skill">python</li>
-												<li class="skill">kotlin</li>
-												<li class="skill">github</li>
+												<li class="skill">Python</li>
+												<li class="skill">Kotlin</li>
+												<li class="skill">Github</li>
 											</ul>
 											<ul class="icons">
 												<li><a href="빅데이터 시각화.pdf" download="다금바리를 찾아서" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
@@ -324,7 +324,6 @@
 		</div>
 
 		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -332,6 +331,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/typing.js"></script>
-			<!-- <script src="assets/js/loding-page.js"></script> -->
+			<script src="assets/js/loding-page.js"></script>
 	</body>
 </html>
