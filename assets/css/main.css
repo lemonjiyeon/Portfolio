@@ -250,6 +250,7 @@ ul {
 .info {
 	text-align: left;
 	display: block;
+	width: 500px;
 }
 
 .info_title {
@@ -333,7 +334,7 @@ ul {
 
 	.aboutme_wrapper,
 	.aboutme_wrapper_1 {
-		width: 50%;
+		width: 100%;
 	}
 
 	.info_text {

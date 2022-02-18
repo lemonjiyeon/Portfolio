@@ -127,7 +127,7 @@
 											</div>
 											<div class="info">
 												<div class="info_title">자격증</div>
-												<div class="info_text">컴퓨터 활용능력 1급<br>정보처리기사 1급 필기합격(2022년 1회 실기예정)</div>
+												<div class="info_text">컴퓨터 활용능력 1급<br>정보처리기사 필기합격(2022년 1회 실기예정)</div>
 											</div>
 										</div>
 									</div>
