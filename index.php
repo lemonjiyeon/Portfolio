@@ -254,7 +254,7 @@
 											<div class="image left">
 												<ul class="slider">
 													<li>
-														<img src="images/movie_app.png" alt=""s/>
+														<img src="images/movie_app.png" alt=""/>
 													</li>
 												</ul>
 											</div>
