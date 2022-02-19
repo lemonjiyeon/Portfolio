@@ -18,16 +18,16 @@
 		<script>
 		// bxslider 설정
 			$(document).ready(function(){
-				$('.slider').bxSlider({
+				$('.slider').show().bxSlider({
 					controls: false,
 					auto: true,
-					speen: 2000,
-					onSliderLoad: function(){
-						$("#edd").css("visibility", "visible").animate({opacity:1});
-						$("#edd2").css("visibility", "visible").animate({opacity:1});
-						$("#edd3").css("visibility", "visible").animate({opacity:1});
-						$("#edd4").css("visibility", "visible").animate({opacity:1}); 
-					}
+					speen: 1000,
+					// onSliderLoad: function(){
+					// 	$("#edd").css("visibility", "visible").animate({opacity:1});
+					// 	$("#edd2").css("visibility", "visible").animate({opacity:1});
+					// 	$("#edd3").css("visibility", "visible").animate({opacity:1});
+					// 	$("#edd4").css("visibility", "visible").animate({opacity:1}); 
+					// }
 				});
 			});
 		</script>
