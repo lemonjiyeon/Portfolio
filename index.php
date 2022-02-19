@@ -18,7 +18,7 @@
 		<script>
 		// bxslider 설정
 			$(document).ready(function(){
-				$(".loader").fadeOut();
+				$("#loader").fadeOut();
 				$(".container").css("display", "block");
 				$('.slider').bxSlider({
 					controls: false,
@@ -51,7 +51,7 @@
 	<body class="is-preload">
 
 		<div class="main-content space-top wrapper" role="main" id="mainContent">
-      	  <div class="loader loading"></div>
+      	  <div id="loader" class="loader loading"></div>
 		</div>
 
 		<div class="container" id="bgwrapper">
