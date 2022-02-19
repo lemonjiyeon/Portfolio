@@ -14,13 +14,14 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		
 		<script>
-			// bxslider 설정
+		// bxslider 설정
 			$(document).ready(function(){
 				$('.slider').bxSlider({
 					controls:false,
-					onSliderLoad: function(){ $("#edd").css("visibility", "visible").animate({opacity:1}); }
-
+					auto:true,
+					speen:2000
 				});
 			});
 		</script>
@@ -181,18 +182,18 @@
 								
 									<div class="box">
 										<p>
-											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
-												<div class="slider">
-													<div>
+											<div class="image left">
+												<ul class="slider">
+													<li>
 														<img src="images/tourrainbow_1.png" alt=""s/>
-													</div>
-													<div>
+													</li>
+													<li>
 														<img src="images/tourrainbow_plan.png" alt="" />
-													</div>
-													<div>
+													</li>
+													<li>
 														<img src="images/tourrainbow_development.png" alt="" />
-													</div>
-												</div>
+													</li>
+												</ul>
 											</div>
 												<h3>Tour Rainbow</h3>
 												프로젝트를 기획하고 UI디자인과 게시판 기능 구현을 진행하였습니다.
@@ -218,7 +219,7 @@
 
 									<div class="box">
 										<p>
-											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
+											<div class="image left">
 												<div class="slider">
 													<div>
 														<img src="images/udonmain.png" alt=""s/>
@@ -250,7 +251,7 @@
 
 									<div class="box">
 										<p>
-											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
+											<div class="image left">
 												<div class="slider">
 													<div>
 														<img src="images/movie_app.png" alt=""s/>
@@ -276,7 +277,7 @@
 
 									<div class="box">
 										<p>
-											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
+											<div class="image left">
 												<div class="slider">
 													<div>
 														<img src="images/dagumbari.jpg" alt=""/>
