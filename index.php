@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<title>JIYEON CHAE - PORTFOLIO</title>
-		<meta charset="utf-8" />
+		<meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<link rel="icon" href="images/icon2.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css?after" />
@@ -18,16 +18,31 @@
 		<script>
 		// bxslider 설정
 			$(document).ready(function(){
-				$('.slider').show().bxSlider({
+				$(".loader").fadeOut();
+				$(".container").css("display", "block");
+				$('.slider').bxSlider({
 					controls: false,
 					auto: true,
-					speen: 1000,
-					// onSliderLoad: function(){
-					// 	$("#edd").css("visibility", "visible").animate({opacity:1});
-					// 	$("#edd2").css("visibility", "visible").animate({opacity:1});
-					// 	$("#edd3").css("visibility", "visible").animate({opacity:1});
-					// 	$("#edd4").css("visibility", "visible").animate({opacity:1}); 
-					// }
+					speed: 1000,
+					onSliderLoad: function(){
+						$("#edd").css("visibility", "visible").animate({opacity:1});
+						$("#edd2").css("visibility", "visible").animate({opacity:1});
+						$("#edd3").css("visibility", "visible").animate({opacity:1});
+						$("#edd4").css("visibility", "visible").animate({opacity:1}); 
+					}
+				});
+			});
+
+			// Movie app slider option
+			$(document).ready(function(){
+				$('.slider_1').show().bxSlider({
+					controls: false,
+					auto: true,
+					speed: 1000,
+					pager: false,
+					onSliderLoad: function(){
+						$("#edd3").css("visibility", "visible").animate({opacity:1});
+					}
 				});
 			});
 		</script>
@@ -35,8 +50,10 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- <div class="loader">
-		</div> -->
+		<div class="main-content space-top wrapper" role="main" id="mainContent">
+      	  <div class="loader loading"></div>
+		</div>
+
 		<div class="container" id="bgwrapper">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -258,7 +275,7 @@
 									<div class="box">
 										<p>
 											<div id="edd3" class="image left">
-												<ul class="slider">
+												<ul class="slider_1">
 													<li>
 														<img src="images/movie_app.png" alt=""/>
 													</li>
