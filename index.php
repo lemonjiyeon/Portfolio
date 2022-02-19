@@ -22,6 +22,12 @@
 					controls: false,
 					auto: true,
 					speen: 2000,
+					onSliderLoad: function(){
+						$("#edd").css("visibility", "visible").animate({opacity:1});
+						$("#edd2").css("visibility", "visible").animate({opacity:1});
+						$("#edd3").css("visibility", "visible").animate({opacity:1});
+						$("#edd4").css("visibility", "visible").animate({opacity:1}); 
+					}
 				});
 			});
 		</script>
@@ -182,7 +188,7 @@
 								
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd" class="image left">
 												<ul class="slider">
 													<li>
 														<img src="images/tourrainbow_1.png" alt=""/>
@@ -219,7 +225,7 @@
 
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd2" class="image left">
 												<ul class="slider">
 													<li>
 														<img src="images/udonmain.png" alt=""/>
@@ -251,7 +257,7 @@
 
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd3" class="image left">
 												<ul class="slider">
 													<li>
 														<img src="images/movie_app.png" alt=""/>
@@ -277,7 +283,7 @@
 
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div  id="edd4" class="image left">
 												<ul class="slider">
 													<li>
 														<img src="images/dagumbari.jpg" alt=""/>
@@ -334,11 +340,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/typing.js"></script>
-			<!-- <script src="assets/js/loading-page.js"></script> -->
-			<!-- <script>
-				$(widow).load(function(	){
-					$('.loader').fadeOut();
-				});
-			</script> -->
+			
 	</body>
 </html>

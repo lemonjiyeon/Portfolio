@@ -346,7 +346,13 @@ ul {
 /* end about me */
 
 /* loading */
-
+#edd,
+#edd2,
+#edd3,
+#edd4 {
+	visibility: hidden;
+	opacity: 0;
+}
 
 /* end loading */
 
