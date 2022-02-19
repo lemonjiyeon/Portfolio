@@ -16,10 +16,51 @@
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		
 		<script>
+			function test() {
+				LoadingWithMask('images/spinner.gif');
+				setTimeout("closeLoadingWithMask()", 3000);
+			}
+			
+			function LoadingWithMask(gif) {
+				//화면의 높이와 너비를 구합니다.
+				var maskHeight = $(document).height();
+				var maskWidth  = window.document.body.clientWidth;
+				
+				//화면에 출력할 마스크를 설정해줍니다.
+				var mask       ="<div id='mask' style='position:absolute; z-index:9000; background-color:#000000; display:none; left:0; top:0;'></div>";
+				var loadingImg ='';
+				
+				loadingImg +="<div id='loadingImg' style='position: fixed; top: 50%;	left: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center;	-ms-flex-pack: center; justify-content: center;'>";
+				loadingImg +=" <img src='"+ gif +"' style='position: absolute; display: block; margin: 0px auto;'/>";
+				loadingImg +="</div>";
+			
+				//화면에 레이어 추가
+				$('body')
+					.append(mask)
+			
+				//마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채웁니다.
+				$('#mask').css({
+						'width' : maskWidth,
+						'height': maskHeight,
+						'opacity' :'0.5'
+				});
+			
+				//마스크 표시
+				$('#mask').show();
+			
+				//로딩중 이미지 표시
+				$('body').append(loadingImg);
+				$('#loadingImg').show();
+			}
+			
+			function closeLoadingWithMask() {
+				$('#mask, #loadingImg').hide();
+				$('#mask, #loadingImg').empty(); 
+			}
+
 		// bxslider 설정
 			$(document).ready(function(){
-				$("#loader").fadeOut();
-				$(".container").css("display", "block");
+				test();
 				$('.slider').bxSlider({
 					controls: false,
 					auto: true,
@@ -31,10 +72,9 @@
 						$("#edd4").css("visibility", "visible").animate({opacity:1}); 
 					}
 				});
-			});
 
-			// Movie app slider option
-			$(document).ready(function(){
+
+				// Movie app slider option
 				$('.slider_1').show().bxSlider({
 					controls: false,
 					auto: true,
@@ -45,14 +85,16 @@
 					}
 				});
 			});
+
+			
 		</script>
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 	</head>
+
+
 	<body class="is-preload">
 
-		<div class="main-content space-top wrapper" role="main" id="mainContent">
-      	  <div id="loader" class="loader loading"></div>
-		</div>
+		
 
 		<div class="container" id="bgwrapper">
 		<!-- Wrapper -->
