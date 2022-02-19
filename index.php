@@ -220,17 +220,17 @@
 									<div class="box">
 										<p>
 											<div class="image left">
-												<div class="slider">
-													<div>
+												<ul class="slider">
+													<li>
 														<img src="images/udonmain.png" alt=""s/>
-													</div>
-													<div>
+													</li>
+													<li>
 														<img src="images/udon.png" alt="" />
-													</div>
-													<div>
+													</li>
+													<li>
 														<img src="images/udon2.png" alt="" />
-													</div>
-												</div>
+													</li>
+												</ul>
 											</div>
 											<h3>우리동네도서관(우동도)</h3>
 											프로젝트를 기획하고 Firebase와 연동하여 도서 등록, 찜한 도서목록,
@@ -252,11 +252,11 @@
 									<div class="box">
 										<p>
 											<div class="image left">
-												<div class="slider">
-													<div>
+												<ul class="slider">
+													<li>
 														<img src="images/movie_app.png" alt=""s/>
-													</div>
-												</div>
+													</li>
+												</ul>
 											</div>
 											<h3>Movie App</h3>
 											React 클론코딩으로 기본적인 Dom을 활용하여 렌더링을 하였고,
@@ -278,17 +278,17 @@
 									<div class="box">
 										<p>
 											<div class="image left">
-												<div class="slider">
-													<div>
+												<ul class="slider">
+													<li>
 														<img src="images/dagumbari.jpg" alt=""/>
-													</div>
-													<div>
+													</li>
+													<li>
 														<img src="images/dagumbari_1.png" alt="" />
-													</div>
-													<div>
+													</li>
+													<li>
 														<img src="images/dagumbari_2.png" alt="" />
-													</div>
-												</div>
+													</li>
+												</ul>
 											</div>
 											<h3>다금바리를 찾아서</h3>
 											이미지 딥러닝 모델을 통해 다금바리를 판별하는 어플로,
