@@ -19,9 +19,9 @@
 		// bxslider 설정
 			$(document).ready(function(){
 				$('.slider').bxSlider({
-					controls:false,
-					auto:true,
-					speen:2000
+					controls: false,
+					auto: true,
+					speen: 2000,
 				});
 			});
 		</script>
@@ -185,7 +185,7 @@
 											<div class="image left">
 												<ul class="slider">
 													<li>
-														<img src="images/tourrainbow_1.png" alt=""s/>
+														<img src="images/tourrainbow_1.png" alt=""/>
 													</li>
 													<li>
 														<img src="images/tourrainbow_plan.png" alt="" />
@@ -222,7 +222,7 @@
 											<div class="image left">
 												<ul class="slider">
 													<li>
-														<img src="images/udonmain.png" alt=""s/>
+														<img src="images/udonmain.png" alt=""/>
 													</li>
 													<li>
 														<img src="images/udon.png" alt="" />
