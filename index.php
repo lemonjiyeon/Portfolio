@@ -18,7 +18,9 @@
 			// bxslider 설정
 			$(document).ready(function(){
 				$('.slider').bxSlider({
-					controls:false
+					controls:false,
+					onSliderLoad: function(){ $("#edd").css("visibility", "visible").animate({opacity:1}); }
+
 				});
 			});
 		</script>
@@ -26,8 +28,8 @@
 	</head>
 	<body class="is-preload">
 
-		<div class="loader">
-		</div>
+		<!-- <div class="loader">
+		</div> -->
 		<div class="container" id="bgwrapper">
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -179,7 +181,7 @@
 								
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
 												<div class="slider">
 													<div>
 														<img src="images/tourrainbow_1.png" alt=""s/>
@@ -216,7 +218,7 @@
 
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
 												<div class="slider">
 													<div>
 														<img src="images/udonmain.png" alt=""s/>
@@ -248,7 +250,7 @@
 
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
 												<div class="slider">
 													<div>
 														<img src="images/movie_app.png" alt=""s/>
@@ -274,7 +276,7 @@
 
 									<div class="box">
 										<p>
-											<div class="image left">
+											<div id="edd" class="image left" style="visibility:hidden; opacity:0;">
 												<div class="slider">
 													<div>
 														<img src="images/dagumbari.jpg" alt=""/>
@@ -299,7 +301,7 @@
 												<li class="skill">Github</li>
 											</ul>
 											<ul class="icons">
-												<li><a href="빅데이터 시각화.pdf" download="다금바리를 찾아서" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
+												<li><a href="빅데이터 시각화.pptx" download="다금바리를 찾아서" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
 											</ul>
 										</p>
 									</div>
@@ -331,6 +333,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/typing.js"></script>
-			<script src="assets/js/loding-page.js"></script>
+			<!-- <script src="assets/js/loading-page.js"></script> -->
+			<!-- <script>
+				$(widow).load(function(	){
+					$('.loader').fadeOut();
+				});
+			</script> -->
 	</body>
 </html>

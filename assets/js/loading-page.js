@@ -1,3 +1,4 @@
 $(window).load(function () {
-    $(".loading").hide();
+    $(".loader").fadeOut();
+    $(".container").show();
 });
