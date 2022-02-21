@@ -207,7 +207,6 @@
 								<!-- connect me -->
 										<ul class="icons">
 											<li><a href="mailto:govl2411@naver.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-											<li><a href="https://github.com/lemonjiyeon" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 										</ul>
 									</div>
 								</div>
@@ -277,7 +276,6 @@
 												</ul>
 												<ul class="icons">
 													<li><a href="2팀_프로젝트기획서_최종.pptx" download="TOUR RAINBOW" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
-													<li><a href="https://github.com/lemonjiyeon/teamproject/tree/main/travelweb" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 												</ul>
 										</p>
 									</div>
@@ -309,7 +307,6 @@
 
 											<ul class="icons">
 												<li><a href="안드로이드 프로젝트_기획서_4조_최종.pptx" download="UDONDO" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
-												<li><a href="https://github.com/InwooJeong/UdonPro" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 											</ul>
 										</p>
 									</div>
@@ -335,7 +332,6 @@
 											</ul>
 											<ul class="icons">
 												<li><a href="https://lemonjiyeon.github.io/movie_app_2020" class="icon solid alt fa-link"><span class="label">Link</span></a></li>
-												<li><a href="https://github.com/lemonjiyeon/movie_app_2020" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 											</ul>
 										</p>
 									</div>
