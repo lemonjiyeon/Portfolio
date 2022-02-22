@@ -197,7 +197,7 @@
 											</div>
 											<div class="info">
 												<div class="info_title">자격증</div>
-												<div class="info_text">컴퓨터 활용능력 1급<br>정보처리기사 필기합격(2022년 1회 실기예정)</div>
+												<div class="info_text">컴퓨터 활용능력 1급<br>정보처리기사 필기합격<br>빅데이터 시각화 과정 수료</div>
 											</div>
 										</div>
 									</div>
@@ -222,12 +222,12 @@
 									<li>
 										<span class="icon solid major style1 fa-desktop"></span>
 										<h3>Frontend</h3>
-										<p>Html5, CSS, Dart, Javascript, React, JQuery 를 사용한 경험이 있으며, Bootstrap 및 Open Source를 활용할 수 있습니다.</p>
+										<p>Html5, CSS, Dart, Javascript, React, JQuery 를 사용한 경험이 있으며, Bootstrap 및 Open Source를 활용하여 프로젝트에 적용 가능합니다.</p>
 									</li>
 									<li>
 										<span class="icon solid major style3 fa-database"></span>
 										<h3>Backend</h3>
-										<p>Java, Kotlin, Python, Mysql, Oracle, Firebase, MongoDB 를 사용한 경험이 있으며, DB를 연결하여 Join Query 및 CRUD를 작성 가능합니다.</p>
+										<p>Java, Kotlin, Python, Mysql, Oracle, Firebase, MongoDB 를 사용한 경험이 있으며, DB를 연결하여 Join Query 및 CRUD를 활용할 수 있습니다.</p>
 									</li>
 									<li>
 										<span class="icon solid major style5 fa-users"></span>
@@ -260,7 +260,7 @@
 												</ul>
 											</div>
 												<h3>Tour Rainbow</h3>
-												프로젝트를 기획하고 UI디자인과 게시판 기능 구현을 진행하였습니다.
+												프로젝트를 기획 및 문서를 작성하고 UI디자인과 게시판 기능 구현을 진행하였습니다.
 												Spring Boot를 이용한 웹 사이트이며, 기본적인
 												MVC 패턴을 바탕으로 로그인, 회원가입, 게시판, 게시글 관리 기능을 구현하였습니다.
 												
@@ -296,7 +296,7 @@
 												</ul>
 											</div>
 											<h3>우리동네도서관(우동도)</h3>
-											프로젝트를 기획하고 Firebase와 연동하여 도서 등록, 찜한 도서목록,
+											프로젝트를 기획 및 문서를 작성하고 Firebase와 연동하여 도서 등록, 찜한 도서목록,
 											메인화면 및 내정보 수정 등 세부 기능을 구현하였습니다.
 											
 											<ul class="skill-wrap">
@@ -353,7 +353,7 @@
 											</div>
 											<h3>다금바리를 찾아서</h3>
 											이미지 딥러닝 모델을 통해 다금바리를 판별하는 어플로,
-											프로젝트 기획 초안을 작성하고, 
+											프로젝트를 기획하고, 
 											데이터 수집 · 정제와 안드로이드 UI 및 기능을 구현하였습니다.
 					
 											
