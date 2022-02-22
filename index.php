@@ -65,6 +65,7 @@
 					controls: false,
 					auto: true,
 					speed: 1000,
+					preloadImages:'all',
 					onSliderLoad: function(){
 						$("#edd").css("visibility", "visible").animate({opacity:1});
 						$("#edd2").css("visibility", "visible").animate({opacity:1});
@@ -80,6 +81,7 @@
 					auto: true,
 					speed: 1000,
 					pager: false,
+					preloadImages:'all',
 					onSliderLoad: function(){
 						$("#edd3").css("visibility", "visible").animate({opacity:1});
 					}
