@@ -13,9 +13,9 @@
 		<link rel="stylesheet" href="./assets/css/main.css?after" />
 		<!-- progressbar -->
 		<link rel="stylesheet" href="./assets/css/jquery.lineProgressbar.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<link rel="stylesheet" href="./assets/css/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script src="./assets/js/jquery.bxslider.js"></script>
 		<script src="./assets/js/jquery.lineProgressbar.js"></script>
 		<script>
 			function test() {
@@ -65,8 +65,7 @@
 				test();
 				
 				$('.slider1').bxSlider({
-					minSlides:1,
-					slideWidth:450,
+					maxSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -77,7 +76,7 @@
 				});
 
 				$('.slider2').bxSlider({
-					minSlides:1,
+					maxSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -88,7 +87,7 @@
 				});
 
 				$('.slider3').bxSlider({
-					minSlides:1,
+					maxSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -103,7 +102,7 @@
 
 				// Movie app slider option
 				$('.slider_1').bxSlider({
-					
+					maxSlides:1,
 					controls: false,
 					auto: false,
 					speed: 1000,
@@ -115,7 +114,8 @@
 				});
 			});
 
-
+			
+			// scroll시 해당영역 event
 			$(function() {
     			$(window).scroll(function() {
       			  if ($(this).scrollTop() >= Math.ceil($('#project1').offset().top)) {
