@@ -64,17 +64,8 @@
 			$(document).ready(function(){
 				test();
 				
-				var mql = window.matchMedia("screen and (max-width: 768px)");
-				mql.addListener(function(e) {
-					 if(!e.matches) { 
-						 slider1.reloadSlider(); 
-						 slider2.reloadSlider(); 
-						 slider3.reloadSlider(); 
-						 slider4.reloadSlider(); 
-					} 
-				});
-
-				var slider1 = $('.slider1').bxSlider({
+				$('.slider1').bxSlider({
+					minSlides:1,
 					slideWidth:450,
 					controls: false,
 					auto: true,
@@ -85,7 +76,8 @@
 					}
 				});
 
-				var slider2 = $('.slider2').bxSlider({
+				$('.slider2').bxSlider({
+					minSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -95,7 +87,8 @@
 					}
 				});
 
-				var slider3 = $('.slider3').bxSlider({
+				$('.slider3').bxSlider({
+					minSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -109,7 +102,8 @@
 
 
 				// Movie app slider option
-				var slider4 = $('.slider_1').bxSlider({
+				$('.slider_1').bxSlider({
+					
 					controls: false,
 					auto: false,
 					speed: 1000,
