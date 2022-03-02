@@ -368,6 +368,7 @@ ul {
 	/* position: relative; */
 	margin: 0 1.5rem 1rem 0;
 	max-width: 40%;
+	overflow: hidden;
 }
 
 
