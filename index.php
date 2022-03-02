@@ -428,7 +428,7 @@
 									<div id="project3" class="box">
 										<p>
 											<div class="project_skill">
-												<div id="edd3" class="image left">
+												<div id="edd3" class="imageslide">
 													<ul class="slider_1">
 														<li>
 															<img src="images/movie_app.png" alt=""/>
@@ -465,7 +465,7 @@
 									<div id="project4" class="box">
 										<p>
 											<div class="project_skill">
-												<div id="edd4" class="image left">
+												<div id="edd4" class="imageslide">
 													<ul class="slider3">
 														<li>
 															<img src="images/Dagumbari/dagumbari.jpg" alt=""/>
