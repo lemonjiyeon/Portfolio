@@ -67,11 +67,14 @@
 				var mql = window.matchMedia("screen and (max-width: 768px)");
 				mql.addListener(function(e) {
 					 if(!e.matches) {
-						 slider.reloadSlider(); 
+						 slider1.reloadSlider(); 
+						 slider2.reloadSlider(); 
+						 slider3.reloadSlider(); 
+						 slider4.reloadSlider(); 
 					} 
 				});
 
-				$('.slider1').bxSlider({
+				var slider1 = $('.slider1').bxSlider({
 					minSlides:1,
 					maxSlides:1,
 					controls: false,
@@ -83,7 +86,7 @@
 					}
 				});
 
-				$('.slider2').bxSlider({
+				var slider2 = $('.slider2').bxSlider({
 					minSlides:1,
 					maxSlides:1,
 					controls: false,
@@ -95,7 +98,7 @@
 					}
 				});
 
-				$('.slider3').bxSlider({
+				var slider3 = $('.slider3').bxSlider({
 					minSlides:1,
 					maxSlides:1,
 					controls: false,
@@ -111,7 +114,7 @@
 
 
 				// Movie app slider option
-				$('.slider_1').bxSlider({
+				var slider4 = $('.slider_1').bxSlider({
 					infiniteLoop: false,
 					minSlides:1,
 					maxSlides:1,
