@@ -63,23 +63,43 @@
 		// bxslider 설정
 			$(document).ready(function(){
 				test();
-				$('.slider').bxSlider({
+				$('.slider1').bxSlider({
 					controls: false,
 					auto: true,
 					speed: 1000,
 					preloadImages:'all',
 					onSliderLoad: function(){
 						$("#edd").css("visibility", "visible").animate({opacity:1});
+					}
+				});
+
+				$('.slider2').bxSlider({
+					controls: false,
+					auto: true,
+					speed: 1000,
+					preloadImages:'all',
+					onSliderLoad: function(){
 						$("#edd2").css("visibility", "visible").animate({opacity:1});
+					}
+				});
+
+				$('.slider3').bxSlider({
+					controls: false,
+					auto: true,
+					speed: 1000,
+					preloadImages:'all',
+					onSliderLoad: function(){
 						$("#edd4").css("visibility", "visible").animate({opacity:1}); 
 					}
 				});
 
 
+
+
 				// Movie app slider option
 				$('.slider_1').bxSlider({
 					controls: false,
-					auto: true,
+					auto: false,
 					speed: 1000,
 					pager: false,
 					preloadImages:'all',
@@ -90,11 +110,18 @@
 			});
 
 		
+		
+		
+
 			$(document).ready(function(){
-				$('#progressbar_1').LineProgressbar({
+				
+				$('#project1').mouseover(function(){
+					$('#progressbar_1').LineProgressbar({
 					percentage: 80,
 					fillBackgroundColor: '#e67e22'
 				}); 
+				})
+				
 
 				$('#progressbar_2').LineProgressbar({
 					percentage: 70,
@@ -106,7 +133,7 @@
 				}); 
 
 				$('#progressbar_4').LineProgressbar({
-					percentage: 35,
+					percentage: 55,
 					fillBackgroundColor: '#9b59b6'
 				}); 
 			});
@@ -270,11 +297,11 @@
 									<h2>Projects</h2>
 								</header>
 								
-									<div class="box">
+									<div id="project1" class="box">
 										<p>
 											<div class="project_skill">
 												<div id="edd" class="imageslide">
-													<ul class="slider">
+													<ul class="slider1">
 														<li>
 															<img src="images/TourRainbow/Tourrainbow.png" alt=""/>
 														</li>
@@ -335,7 +362,7 @@
 										<p>
 											<div class="project_skill">
 												<div id="edd2" class="imageslide">
-													<ul class="slider">
+													<ul class="slider2">
 														<li>
 															<img src="images/Udondo/udonmain.png" alt=""/>
 														</li>
@@ -417,7 +444,7 @@
 										<p>
 											<div class="project_skill">
 												<div id="edd4" class="image left">
-													<ul class="slider">
+													<ul class="slider3">
 														<li>
 															<img src="images/Dagumbari/dagumbari.jpg" alt=""/>
 														</li>
