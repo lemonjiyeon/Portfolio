@@ -13,9 +13,9 @@
 		<link rel="stylesheet" href="./assets/css/main.css?after" />
 		<!-- progressbar -->
 		<link rel="stylesheet" href="./assets/css/jquery.lineProgressbar.css" />
-		<link rel="stylesheet" href="./assets/css/jquery.bxslider.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="./assets/js/jquery.bxslider.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script src="./assets/js/jquery.lineProgressbar.js"></script>
 		<script>
 			function test() {
@@ -123,7 +123,7 @@
 						percentage: 80,
 						fillBackgroundColor: '#e67e22'
 						}); 
-     			   } 
+     			   }
 					if($(this).scrollTop() >= Math.ceil($('#project2').offset().top)) {
 						$('#progressbar_2').LineProgressbar({
 							percentage: 70,
