@@ -64,6 +64,13 @@
 			$(document).ready(function(){
 				test();
 				
+				var mql = window.matchMedia("screen and (max-width: 768px)");
+				mql.addListener(function(e) {
+					 if(!e.matches) {
+						 slider.reloadSlider(); 
+					} 
+				});
+
 				$('.slider1').bxSlider({
 					minSlides:1,
 					maxSlides:1,
