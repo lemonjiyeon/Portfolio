@@ -65,6 +65,7 @@
 				test();
 				
 				$('.slider1').bxSlider({
+					minSlides:1,
 					maxSlides:1,
 					controls: false,
 					auto: true,
@@ -76,6 +77,7 @@
 				});
 
 				$('.slider2').bxSlider({
+					minSlides:1,
 					maxSlides:1,
 					controls: false,
 					auto: true,
@@ -87,6 +89,7 @@
 				});
 
 				$('.slider3').bxSlider({
+					minSlides:1,
 					maxSlides:1,
 					controls: false,
 					auto: true,
@@ -102,6 +105,7 @@
 
 				// Movie app slider option
 				$('.slider_1').bxSlider({
+					minSlides:1,
 					maxSlides:1,
 					controls: false,
 					auto: false,
