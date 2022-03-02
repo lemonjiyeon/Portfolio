@@ -11,10 +11,12 @@
 		<link rel="icon" href="images/icon2.png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./assets/css/main.css?after" />
+		<!-- progressbar -->
+		<link rel="stylesheet" href="./assets/css/jquery.lineProgressbar.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-		
+		<script src="./assets/js/jquery.lineProgressbar.js"></script>
 		<script>
 			function test() {
 				LoadingWithMask('images/spinner.gif');
@@ -69,7 +71,6 @@
 					onSliderLoad: function(){
 						$("#edd").css("visibility", "visible").animate({opacity:1});
 						$("#edd2").css("visibility", "visible").animate({opacity:1});
-						$("#edd3").css("visibility", "visible").animate({opacity:1});
 						$("#edd4").css("visibility", "visible").animate({opacity:1}); 
 					}
 				});
@@ -88,7 +89,27 @@
 				});
 			});
 
-			
+		
+			$(document).ready(function(){
+				$('#progressbar_1').LineProgressbar({
+					percentage: 80,
+					fillBackgroundColor: '#e67e22'
+				}); 
+
+				$('#progressbar_2').LineProgressbar({
+					percentage: 70,
+				}); 
+
+				$('#progressbar_3').LineProgressbar({
+					percentage: 100,
+					fillBackgroundColor: '#1abc9c'
+				}); 
+
+				$('#progressbar_4').LineProgressbar({
+					percentage: 35,
+					fillBackgroundColor: '#9b59b6'
+				}); 
+			});
 		</script>
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 	</head>
@@ -208,7 +229,7 @@
 
 								<!-- connect me -->
 										<ul class="icons">
-											<li><a href="mailto:govl2411@naver.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+											<li>Contact <a href="mailto:govl2411@naver.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 										</ul>
 									</div>
 								</div>
@@ -237,6 +258,9 @@
 										<p>인턴 당시 SVN을 통해 형상관리를 해보았고, IT교육 참여 당시 Github를 셋팅해 협업하였습니다.</p>
 									</li>
 								</ul>
+								<ul class="icons">
+									<li>Skill Details <a href="보유기술 및 능력_채지연.hwp" download="보유기술 및 능력" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
+								</ul>
 								
 							</section>
 
@@ -248,25 +272,42 @@
 								
 									<div class="box">
 										<p>
-											<div id="edd" class="image left">
-												<ul class="slider">
-													<li>
-														<img src="images/tourrainbow_1.png" alt=""/>
-													</li>
-													<li>
-														<img src="images/tourrainbow_plan.png" alt="" />
-													</li>
-													<li>
-														<img src="images/tourrainbow_development.png" alt="" />
-													</li>
-												</ul>
+											<div class="project_skill">
+												<div id="edd" class="imageslide">
+													<ul class="slider">
+														<li>
+															<img src="images/TourRainbow/Tourrainbow.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/TourRainbow/TourRainbow_1.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/TourRainbow/TourRainbow_2.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/TourRainbow/TourRainbow_3.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/TourRainbow/TourRainbow_4.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/TourRainbow/TourRainbow_5.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/TourRainbow/TourRainbow_6.png" alt=""/>
+														</li>
+													</ul>
+												</div>
+												<div class="project_content">
+													<h3 class="project_content_title">Tour Rainbow</h3>
+													프로젝트를 기획 및 문서를 작성하고 UI디자인과 게시판 기능 구현을 진행하였습니다.
+													Spring Boot를 이용한 웹 사이트이며, 기본적인
+													MVC 패턴을 바탕으로 로그인, 회원가입, 게시판, 게시글 관리 기능을 구현하였습니다.
+												</div>
 											</div>
-												<h3>Tour Rainbow</h3>
-												프로젝트를 기획 및 문서를 작성하고 UI디자인과 게시판 기능 구현을 진행하였습니다.
-												Spring Boot를 이용한 웹 사이트이며, 기본적인
-												MVC 패턴을 바탕으로 로그인, 회원가입, 게시판, 게시글 관리 기능을 구현하였습니다.
-												
-												
+
+											<div class="project_skill">
+												<p class="skill_title">사용 기술</p>
 												<ul class="skill-wrap">
 													<li class="skill">Java</li>
 													<li class="skill">HTML</li>
@@ -276,96 +317,148 @@
 													<li class="skill">Mysql</li>
 													<li class="skill">Github</li>
 												</ul>
-												<ul class="icons">
-													<li><a href="2팀_프로젝트기획서_최종.pptx" download="TOUR RAINBOW" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
-												</ul>
-										</p>
-									</div>
-
-									<div class="box">
-										<p>
-											<div id="edd2" class="image left">
-												<ul class="slider">
-													<li>
-														<img src="images/udonmain.png" alt=""/>
-													</li>
-													<li>
-														<img src="images/udon.png" alt="" />
-													</li>
-													<li>
-														<img src="images/udon2.png" alt="" />
-													</li>
-												</ul>
 											</div>
-											<h3>우리동네도서관(우동도)</h3>
-											프로젝트를 기획 및 문서를 작성하고 Firebase와 연동하여 도서 등록, 찜한 도서목록,
-											메인화면 및 내정보 수정 등 세부 기능을 구현하였습니다.
-											
-											<ul class="skill-wrap">
-												<li class="skill">Kotlin</li>
-												<li class="skill">Firebase</li>
-												<li class="skill">Github</li>
-											</ul>
 
+										
+											<div class="progress_fixed">
+												<div class="progress_title">참여도</div>
+												<div id="progressbar_1"></div>
+											</div>
 											<ul class="icons">
-												<li><a href="안드로이드 프로젝트_기획서_4조_최종.pptx" download="UDONDO" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
+												<li>Project Details <a href="2팀_프로젝트기획서_최종.pptx" download="TOUR RAINBOW" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
+											</ul>
+										</p>
+									
+									</div>
+
+									<div class="box">
+										<p>
+											<div class="project_skill">
+												<div id="edd2" class="imageslide">
+													<ul class="slider">
+														<li>
+															<img src="images/Udondo/udonmain.png" alt=""/>
+														</li>
+														<li>
+															<img src="images/Udondo/Udondo_1.png" alt="" />
+														</li>
+														<li>
+															<img src="images/Udondo/Udondo_2.png" alt="" />
+														</li>
+														<li>
+															<img src="images/Udondo/Udondo_3.png" alt="" />
+														</li>
+													</ul>
+												</div>
+												<div class="project_content">
+													<h3 class="project_content_title">우리동네도서관(우동도)</h3>
+													프로젝트를 기획 및 문서를 작성하고 Firebase와 연동하여 도서 등록, 찜한 도서목록,
+													메인화면 및 내정보 수정 등 세부 기능을 구현하였습니다.
+												</div>
+											</div>
+												
+											<div class="project_skill">
+												<p class="skill_title">사용 기술</p>
+												<ul class="skill-wrap">
+													<li class="skill">Kotlin</li>
+													<li class="skill">Firebase</li>
+													<li class="skill">Github</li>
+												</ul>
+											</div>
+
+											<div class="progress_fixed">
+												<div class="progress_title">참여도</div>
+												<div id="progressbar_2"></div>
+											</div>
+											<ul class="icons">
+												<li>Project Details <a href="안드로이드 프로젝트_기획서_4조_최종.pptx" download="UDONDO" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
 											</ul>
 										</p>
 									</div>
 
 									<div class="box">
 										<p>
-											<div id="edd3" class="image left">
-												<ul class="slider_1">
-													<li>
-														<img src="images/movie_app.png" alt=""/>
-													</li>
-												</ul>
+											<div class="project_skill">
+												<div id="edd3" class="image left">
+													<ul class="slider_1">
+														<li>
+															<img src="images/movie_app.png" alt=""/>
+														</li>
+													</ul>
+												</div>
+												<div class="project_content">
+													<h3 class="project_content_title">Movie App</h3>
+													React 클론코딩으로 기본적인 Dom을 활용하여 렌더링을 하였고,
+													Git을 통해 배포하였습니다.
+												</div>
 											</div>
-											<h3>Movie App</h3>
-											React 클론코딩으로 기본적인 Dom을 활용하여 렌더링을 하였고,
-											Git을 통해 배포하였습니다.
+												
 					
-											
-											<ul class="skill-wrap">
-												<li class="skill">React</li>
-												<li class="skill">HTML</li>
-												<li class="skill">Github</li>
-											</ul>
+											<div class="project_skill">
+												<p class="skill_title">사용 기술</p>
+												<ul class="skill-wrap">
+													<li class="skill">React</li>
+													<li class="skill">HTML</li>
+													<li class="skill">Github</li>
+												</ul>
+											</div>
+
+											<div class="progress_fixed">
+												<div class="progress_title">참여도</div>
+												<div id="progressbar_3"></div>
+											</div>
 											<ul class="icons">
-												<li><a href="https://lemonjiyeon.github.io/movie_app_2020" class="icon solid alt fa-link"><span class="label">Link</span></a></li>
+												<li>Project Link <a href="https://lemonjiyeon.github.io/movie_app_2020" class="icon solid alt fa-link"><span class="label">Link</span></a></li>
 											</ul>
 										</p>
 									</div>
 
 									<div class="box">
 										<p>
-											<div  id="edd4" class="image left">
-												<ul class="slider">
-													<li>
-														<img src="images/dagumbari.jpg" alt=""/>
-													</li>
-													<li>
-														<img src="images/dagumbari_1.png" alt="" />
-													</li>
-													<li>
-														<img src="images/dagumbari_2.png" alt="" />
-													</li>
+											<div class="project_skill">
+												<div id="edd4" class="image left">
+													<ul class="slider">
+														<li>
+															<img src="images/Dagumbari/dagumbari.jpg" alt=""/>
+														</li>
+														<li>
+															<img src="images/Dagumbari/Dagumbari_1.png" alt="" />
+														</li>
+														<li>
+															<img src="images/Dagumbari/Dagumbari_2.png" alt="" />
+														</li>
+														<li>
+															<img src="images/Dagumbari/Dagumbari_3.png" alt="" />
+														</li>
+														<li>
+															<img src="images/Dagumbari/Dagumbari_4.png" alt="" />
+														</li>
+													</ul>
+												</div>
+												<div class="project_content">
+													<h3 class="project_content_title">다금바리를 찾아서</h3>
+													이미지 딥러닝 모델을 통해 다금바리를 판별하는 어플로,
+													프로젝트를 기획하고, 
+													데이터 수집 · 정제와 안드로이드 UI 및 기능을 구현하였습니다.
+												</div>
+											</div>
+						
+											
+											<div class="project_skill">
+												<p class="skill_title">사용 기술</p>
+												<ul class="skill-wrap">
+													<li class="skill">Python</li>
+													<li class="skill">Kotlin</li>
+													<li class="skill">Github</li>
 												</ul>
 											</div>
-											<h3>다금바리를 찾아서</h3>
-											이미지 딥러닝 모델을 통해 다금바리를 판별하는 어플로,
-											프로젝트를 기획하고, 
-											데이터 수집 · 정제와 안드로이드 UI 및 기능을 구현하였습니다.
-					
-											
-											<ul class="skill-wrap">
-												<li class="skill">Python</li>
-												<li class="skill">Kotlin</li>
-												<li class="skill">Github</li>
-											</ul>
+
+											<div class="progress_fixed">
+												<div class="progress_title">참여도</div>
+												<div id="progressbar_4"></div>
+											</div>
 											<ul class="icons">
-												<li><a href="빅데이터 시각화.pptx" download="다금바리를 찾아서" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
+												<li>Project Details <a href="빅데이터 시각화.pptx" download="다금바리를 찾아서" class="icon object alt fa-file-pdf"><span class="label">PDF</span></a></li>
 											</ul>
 										</p>
 									</div>

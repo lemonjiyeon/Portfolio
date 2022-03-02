@@ -359,13 +359,47 @@ ul {
 
 /* end loading */
 
+
 /* projects */
+.imageslide {
+	float: left;
+	border-radius: 8px;
+	border: 0;
+	position: relative;
+	margin: 0 1.5rem 1rem 0;
+	max-width: 40%;
+}
+
+.project_content {
+	display: inline-block;
+	max-width: 50%;
+}
+
+.project_content_title {
+	font-weight: bold;
+}
+
 .title {
 	text-align: left;
 }
 
+
+.project_skill {
+	overflow: hidden;
+	margin-top: 1.5rem;
+}
+
+.skill_title {
+	float: left;
+	max-width: 20%;
+	margin: 1.5rem 1.5rem 0 0;
+	font-weight: bold;
+}
+
 .skill-wrap {
-	margin: 20px;
+	float: right;
+	margin: 1rem 0 1rem 1rem;
+	max-width: 100%;
 }
 
 .skill {
@@ -383,6 +417,58 @@ ul {
 .left-c {
 	display: inline-block;
 }
+
+.progress_title {
+	float: left;
+	text-align: left;
+	font-weight: bold;
+	width: 45%;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+#progressbar_1,
+#progressbar_2,
+#progressbar_3,
+#progressbar_4 {
+	float: right;
+	width: 50%;
+	margin: 1.5rem 1rem 1.5rem 0;
+}
+
+.progress_fixed {
+	overflow: hidden;
+}
+
+@media (max-width: 720px) {
+
+	.imageslide,
+	.project_content,
+	.skill_title {
+		max-width: 100%;
+	}
+
+	.skill_title,
+	.skill-wrap {
+		margin: 0 0 1rem 0;
+	}
+
+	#progressbar_1,
+	#progressbar_2,
+	#progressbar_3,
+	#progressbar_4 {
+		width: 100%;
+		margin: 0 0 1.5rem 1.5rem;
+	}
+
+	.project_content {
+		margin-bottom: 1.5rem;
+	}
+}
+
+
+
+/* end project */
 
 
 /* footer comment */
@@ -2722,6 +2808,7 @@ input[type="radio"]:focus+label:before {
 	border: 0;
 	display: inline-block;
 	position: relative;
+
 }
 
 
