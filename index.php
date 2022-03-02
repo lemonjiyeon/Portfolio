@@ -109,33 +109,64 @@
 				});
 			});
 
-		
-		
+
+			$(function() {
+    			$(window).scroll(function() {
+      			  if ($(this).scrollTop() >= Math.ceil($('#project1').offset().top)) {
+						$('#progressbar_1').LineProgressbar({
+						percentage: 80,
+						fillBackgroundColor: '#e67e22'
+					}); 
+     			   } 
+					if($(this).scrollTop() >= Math.ceil($('#project2').offset().top)) {
+						$('#progressbar_2').LineProgressbar({
+							percentage: 70,
+						}); 
+					}
+					if($(this).scrollTop() >= Math.ceil($('#project3').offset().top)) {
+						$('#progressbar_3').LineProgressbar({
+							percentage: 100,
+							fillBackgroundColor: '#1abc9c'
+						}); 
+
+					}
+					if($(this).scrollTop() >= Math.ceil($('#project4').offset().top)) {
+						$('#progressbar_4').LineProgressbar({
+							percentage: 55,
+							fillBackgroundColor: '#9b59b6'
+						});  
+					}
+				});
+			});
+			
+				
+					
 		
 
 			$(document).ready(function(){
 				
-				$('#project1').mouseover(function(){
-					$('#progressbar_1').LineProgressbar({
-					percentage: 80,
-					fillBackgroundColor: '#e67e22'
-				}); 
-				})
+			
+				// $('#project1').mouseover(function(){
+				// 	$('#progressbar_1').LineProgressbar({
+				// 	percentage: 80,
+				// 	fillBackgroundColor: '#e67e22'
+				// }); 
+				// });
 				
 
-				$('#progressbar_2').LineProgressbar({
-					percentage: 70,
-				}); 
+				// $('#progressbar_2').LineProgressbar({
+				// 	percentage: 70,
+				// }); 
 
-				$('#progressbar_3').LineProgressbar({
-					percentage: 100,
-					fillBackgroundColor: '#1abc9c'
-				}); 
+				// $('#progressbar_3').LineProgressbar({
+				// 	percentage: 100,
+				// 	fillBackgroundColor: '#1abc9c'
+				// }); 
 
-				$('#progressbar_4').LineProgressbar({
-					percentage: 55,
-					fillBackgroundColor: '#9b59b6'
-				}); 
+				// $('#progressbar_4').LineProgressbar({
+				// 	percentage: 55,
+				// 	fillBackgroundColor: '#9b59b6'
+				// }); 
 			});
 		</script>
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
@@ -358,7 +389,7 @@
 									
 									</div>
 
-									<div class="box">
+									<div id="project2" class="box">
 										<p>
 											<div class="project_skill">
 												<div id="edd2" class="imageslide">
@@ -403,7 +434,7 @@
 										</p>
 									</div>
 
-									<div class="box">
+									<div id="project3" class="box">
 										<p>
 											<div class="project_skill">
 												<div id="edd3" class="image left">
@@ -440,7 +471,7 @@
 										</p>
 									</div>
 
-									<div class="box">
+									<div id="project4" class="box">
 										<p>
 											<div class="project_skill">
 												<div id="edd4" class="image left">
