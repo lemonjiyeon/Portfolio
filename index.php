@@ -64,6 +64,7 @@
 			$(document).ready(function(){
 				test();
 				$('.slider1').bxSlider({
+					minSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -74,6 +75,7 @@
 				});
 
 				$('.slider2').bxSlider({
+					minSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -84,6 +86,7 @@
 				});
 
 				$('.slider3').bxSlider({
+					minSlides:1,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -98,6 +101,7 @@
 
 				// Movie app slider option
 				$('.slider_1').bxSlider({
+					minSlides:1,
 					controls: false,
 					auto: false,
 					speed: 1000,
@@ -140,34 +144,7 @@
 			});
 			
 				
-					
-		
-
-			$(document).ready(function(){
 				
-			
-				// $('#project1').mouseover(function(){
-				// 	$('#progressbar_1').LineProgressbar({
-				// 	percentage: 80,
-				// 	fillBackgroundColor: '#e67e22'
-				// }); 
-				// });
-				
-
-				// $('#progressbar_2').LineProgressbar({
-				// 	percentage: 70,
-				// }); 
-
-				// $('#progressbar_3').LineProgressbar({
-				// 	percentage: 100,
-				// 	fillBackgroundColor: '#1abc9c'
-				// }); 
-
-				// $('#progressbar_4').LineProgressbar({
-				// 	percentage: 55,
-				// 	fillBackgroundColor: '#9b59b6'
-				// }); 
-			});
 		</script>
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
 	</head>
