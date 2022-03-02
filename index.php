@@ -63,8 +63,19 @@
 		// bxslider 설정
 			$(document).ready(function(){
 				test();
-				$('.slider1').bxSlider({
-					minSlides:1,
+				
+				var mql = window.matchMedia("screen and (max-width: 768px)");
+				mql.addListener(function(e) {
+					 if(!e.matches) { 
+						 slider1.reloadSlider(); 
+						 slider2.reloadSlider(); 
+						 slider3.reloadSlider(); 
+						 slider4.reloadSlider(); 
+					} 
+				});
+
+				var slider1 = $('.slider1').bxSlider({
+					slideWidth:450,
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -74,8 +85,7 @@
 					}
 				});
 
-				$('.slider2').bxSlider({
-					minSlides:1,
+				var slider2 = $('.slider2').bxSlider({
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -85,8 +95,7 @@
 					}
 				});
 
-				$('.slider3').bxSlider({
-					minSlides:1,
+				var slider3 = $('.slider3').bxSlider({
 					controls: false,
 					auto: true,
 					speed: 1000,
@@ -100,8 +109,7 @@
 
 
 				// Movie app slider option
-				$('.slider_1').bxSlider({
-					minSlides:1,
+				var slider4 = $('.slider_1').bxSlider({
 					controls: false,
 					auto: false,
 					speed: 1000,
@@ -120,7 +128,7 @@
 						$('#progressbar_1').LineProgressbar({
 						percentage: 80,
 						fillBackgroundColor: '#e67e22'
-					}); 
+						}); 
      			   } 
 					if($(this).scrollTop() >= Math.ceil($('#project2').offset().top)) {
 						$('#progressbar_2').LineProgressbar({
