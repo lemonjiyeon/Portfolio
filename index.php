@@ -131,34 +131,84 @@
 
 			
 			// scroll시 해당영역 event
-			$(function() {
-    			$(window).scroll(function() {
-      			  if ($(this).scrollTop() >= Math.ceil($('#project1').offset().top)) {
-						$('#progressbar_1').LineProgressbar({
-						percentage: 80,
-						fillBackgroundColor: '#e67e22'
-						}); 
-     			   }
-					if($(this).scrollTop() >= Math.ceil($('#project2').offset().top)) {
-						$('#progressbar_2').LineProgressbar({
+			var isVisible1 = false;
+			var isVisible2 = false;
+			var isVisible3 = false;
+			var isVisible4 = false;
+
+
+			$(window).on('scroll',function() {
+				if (checkVisible($('#progressbar_1'))&&!isVisible1) {
+					$('#progressbar_1').LineProgressbar({
+							percentage: 80,
+							fillBackgroundColor: '#e67e22'
+					}); 
+					isVisible1=true;
+				}
+				if (checkVisible($('#progressbar_2'))&&!isVisible2) {
+					$('#progressbar_2').LineProgressbar({
 							percentage: 70,
 						}); 
-					}
-					if($(this).scrollTop() >= Math.ceil($('#project3').offset().top)) {
-						$('#progressbar_3').LineProgressbar({
+					isVisible2=true;
+				}
+				if (checkVisible($('#progressbar_3'))&&!isVisible3) {
+					$('#progressbar_3').LineProgressbar({
 							percentage: 100,
 							fillBackgroundColor: '#1abc9c'
 						}); 
-
-					}
-					if($(this).scrollTop() >= Math.ceil($('#project4').offset().top)) {
-						$('#progressbar_4').LineProgressbar({
+					isVisible3=true;
+				}
+				if (checkVisible($('#progressbar_4'))&&!isVisible4) {
+					$('#progressbar_4').LineProgressbar({
 							percentage: 55,
 							fillBackgroundColor: '#9b59b6'
-						});  
-					}
-				});
+						});
+					isVisible4=true;
+				}
+	
 			});
+
+			function checkVisible( elm, eval ) {
+				eval = eval || "object visible";
+				var viewportHeight = $(window).height(), // Viewport Height
+					scrolltop = $(window).scrollTop(), // Scroll Top
+					y = $(elm).offset().top,
+					elementHeight = $(elm).height();   
+				
+				if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+				if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+			}
+
+
+			// 특정 영역 event 계속
+			// $(function() {
+    		// 	$(window).scroll(function() {
+      		// 	  if ($(this).scrollTop() >= Math.ceil($('#project1').offset().top)) {
+			// 			$('#progressbar_1').LineProgressbar({
+			// 				percentage: 80,
+			// 				fillBackgroundColor: '#e67e22'
+			// 			}); 
+     		// 	   }
+			// 		if($(this).scrollTop() >= Math.ceil($('#project2').offset().top)) {
+			// 			$('#progressbar_2').LineProgressbar({
+			// 				percentage: 70,
+			// 			}); 
+			// 		}
+			// 		if($(this).scrollTop() >= Math.ceil($('#project3').offset().top)) {
+			// 			$('#progressbar_3').LineProgressbar({
+			// 				percentage: 100,
+			// 				fillBackgroundColor: '#1abc9c'
+			// 			}); 
+
+			// 		}
+			// 		if($(this).scrollTop() >= Math.ceil($('#project4').offset().top)) {
+			// 			$('#progressbar_4').LineProgressbar({
+			// 				percentage: 55,
+			// 				fillBackgroundColor: '#9b59b6'
+			// 			});  
+			// 		}
+			// 	});
+			// });
 			
 				
 				
