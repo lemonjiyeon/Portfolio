@@ -363,11 +363,9 @@ ul {
 /* projects */
 .imageslide {
 	float: left;
-	border-radius: 8px;
-	border: 0;
 	/* position: relative; */
 	margin: 0 1.5rem 1rem 0;
-	max-width: 40%;
+	width: 40%;
 	overflow: hidden;
 }
 
@@ -445,7 +443,7 @@ ul {
 
 @media (max-width: 768px) {
 
-	.imageslide,
+
 	.project_content,
 	.skill_title {
 		max-width: 100%;
@@ -462,6 +460,10 @@ ul {
 	#progressbar_4 {
 		width: 100%;
 		margin: 0 0 1.5rem 1.5rem;
+	}
+
+	.imageslide {
+		width: 100%;
 	}
 
 	.project_content {

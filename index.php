@@ -115,6 +115,7 @@
 
 				// Movie app slider option
 				var slider4 = $('.slider_1').bxSlider({
+					infiniteLoop: false,
 					minSlides:1,
 					maxSlides:1,
 					controls: false,
